@@ -1,0 +1,11 @@
+messy,지저분한, 엉망인
+fingernail,손톱
+dirty,더러운
+scary,무서운
+worm,지렁이
+troll,트롤
+giraffe,기린
+lizard,도마뱀
+frog,개구리
+strange,이상한
+neighbor,[명] 이웃
