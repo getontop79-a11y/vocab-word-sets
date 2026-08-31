@@ -9,7 +9,7 @@ root,뿌리
 careless,부주의한
 grandparent,조부모
 theater,극장
-measure,측정하다
+like,좋아하다
 cloudy,흐린
 cycling,자전거타기
 niece,조카(여)
@@ -32,9 +32,9 @@ planet,행성
 Korean,국어
 salty,짠
 warm,따뜻한
-plan,계획하다
+share,나누다
 honest,정직한
-wish,소망하다
+meet,만나다
 arrive,도착하다
 cook,요리사
 farm,농장
@@ -43,16 +43,16 @@ basketball,농구
 stranger,낯선 사람
 drawing,그리기
 subject,과목
-create,만들다
+give,주다
 cousin,사촌
 baking,빵 굽기
 lawyer,변호사
 borrow,빌리다
 cliff,절벽
 collect,모으다
-solve,풀다
+use,사용하다
 fishing,낚시
-compare,비교하다
+sell,팔다
 mix,섞다
 trail,오솔길
 agree,동의하다
@@ -62,16 +62,16 @@ toy store,장난감 가게
 dancing,춤추기
 explain,설명하다
 brave,용감한
-attend,참석하다
+pour,붓다
 August,8월
 boxing,권투
 useless,쓸모없는
 tennis,테니스
 magician,마술사
-arrange,배열하다
+hold,잡다
 introduce,소개하다
 number,숫자
-discover,발견하다
+make,만들다
 cafeteria,급식실
 soccer,축구
 ant,개미
@@ -104,12 +104,12 @@ truck,트럭
 tunnel,터널
 June,6월
 class,수업
-dream,꿈꾸다
+greet,인사하다
 bee,벌
 rectangle,직사각형
 minute,분
 plus,더하기
-encourage,격려하다
+push,밀다
 firefighter,소방관
 bake,굽다
 fire truck,소방차
@@ -127,10 +127,10 @@ boat,보트
 choose,고르다
 start,시작하다
 church,교회
-guess,추측하다
+need,필요하다
 submarine,잠수함
 dancer,무용수
-respect,존중하다
+fix,고치다
 freezing,꽁꽁 언
 astronaut,우주비행사
 spider,거미
@@ -140,7 +140,7 @@ forest,숲
 ingredient,재료
 January,1월
 snowy,눈오는
-participate,참가하다
+tie,묶다
 singer,가수
 build,짓다
 meadow,초원
@@ -162,12 +162,12 @@ soldier,군인
 forget,잊다
 museum,박물관
 o'clock,정각
-suggest,제안하다
+wear,입다
 October,10월
 sunny,화창한
 return,돌아오다/반납하다
-discuss,의논하다
-doubt,의심하다
+lose,잃다
+hide,숨다
 math,수학
 tower,탑
 disappointed,실망한
@@ -182,12 +182,12 @@ nephew,조카(남)
 principal,교장선생님
 prepare,준비하다
 partner,짝
-admire,감탄하다
+cut,자르다
 circle,원
 uncomfortable,불편한
 music,음악
 polite,예의바른
-count,세다
+want,원하다
 finish,끝내다
 February,2월
 volcano,화산
@@ -201,7 +201,7 @@ history,역사
 desert,사막
 collecting,수집하기
 test,시험
-trust,믿다
+fill,채우다
 noisy,시끄러운
 worried,걱정하는
 hockey,하키
@@ -219,13 +219,13 @@ comfortable,편안한
 ship,배
 table tennis,탁구
 jogging,조깅
-apologize,사과하다
+pull,당기다
 path,길
 gymnastics,체조
 protect,보호하다
 baker,제빵사
 difficult,어려운
-organize,정리하다
+touch,만지다
 dentist,치과의사
 pond,연못
 semester,학기
@@ -233,12 +233,12 @@ curious,궁금한
 swimming,수영
 bank,은행
 cool,시원한
-weigh,무게를 재다
+love,사랑하다
 visit,방문하다
 camping,캠핑
-warn,경고하다
+carry,나르다
 science,과학
-invent,발명하다
+take,가져가다
 auditorium,강당
 similar,비슷한
 cheap,싼
@@ -260,7 +260,7 @@ cave,동굴
 July,7월
 embarrassed,당황한
 classmate,반친구
-imagine,상상하다
+buy,사다
 post office,우체국
 bakery,빵집
 lend,빌려주다
@@ -281,17 +281,17 @@ square,정사각형
 fry,튀기다
 factory,공장
 expensive,비싼
-describe,묘사하다
-hope,바라다
+find,찾다
+lead,이끌다
 art,미술
 cooking,요리하기
 harbor,항구
 bus,버스
 repair,고치다
 volleyball,배구
-wonder,궁금해하다
+follow,따라가다
 recipe,조리법
-complain,불평하다
+pick,고르다/따다
 textbook,교과서
 temple,절
 bitter,쓴

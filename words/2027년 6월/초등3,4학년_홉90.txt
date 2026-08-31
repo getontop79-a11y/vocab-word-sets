@@ -8,7 +8,7 @@ stranger,낯선 사람
 ant,개미
 exit,나가다
 motorcycle,오토바이
-count,세다
+want,원하다
 auditorium,강당
 volleyball,배구
 hour,시간
@@ -21,7 +21,7 @@ cave,동굴
 music,음악
 wonderful,멋진
 confused,혼란스러운
-hope,바라다
+lead,이끌다
 trail,오솔길
 comfortable,편안한
 useless,쓸모없는
@@ -45,7 +45,7 @@ bicycle,자전거
 jealous,질투하는
 cliff,절벽
 surprised,놀란
-wonder,궁금해하다
+follow,따라가다
 photographer,사진작가
 locker,사물함
 popular,인기있는
@@ -54,12 +54,12 @@ volcano,화산
 plus,더하기
 ship,배
 bridge,다리(건축물)
-discover,발견하다
+make,만들다
 snowy,눈오는
 collecting,수집하기
 designer,디자이너
 pilot,조종사
-admire,감탄하다
+cut,자르다
 difficult,어려운
 airport,공항
 spider,거미
@@ -84,7 +84,7 @@ cool,시원한
 hallway,복도
 test,시험
 baking,빵 굽기
-describe,묘사하다
+find,찾다
 taekwondo,태권도
 taxi,택시
 principal,교장선생님

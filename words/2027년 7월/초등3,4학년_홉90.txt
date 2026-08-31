@@ -3,7 +3,7 @@ surprised,놀란
 singing,노래하기
 bee,벌
 February,2월
-suggest,제안하다
+wear,입다
 skiing,스키타기
 minus,빼기
 fishing,낚시
@@ -21,43 +21,43 @@ engineer,기술자
 locker,사물함
 volcano,화산
 uniform,교복
-dream,꿈꾸다
+greet,인사하다
 stranger,낯선 사람
 textbook,교과서
 pond,연못
 dancer,무용수
-create,만들다
+give,주다
 writer,작가
 kind,친절한
 path,길
 prepare,준비하다
 cafeteria,급식실
-warn,경고하다
+carry,나르다
 bored,지루한
 proud,자랑스러운
 harbor,항구
 gardening,정원 가꾸기
 skating,스케이트타기
 farmer,농부
-respect,존중하다
+fix,고치다
 rainy,비오는
 airport,공항
 airplane,비행기
 leaf,잎
 return,돌아오다/반납하다
 submarine,잠수함
-wish,소망하다
+meet,만나다
 arrive,도착하다
 hockey,하키
 plus,더하기
 police officer,경찰관
 bank,은행
-doubt,의심하다
+hide,숨다
 camping,캠핑
 freezing,꽁꽁 언
 branch,나뭇가지
 homework,숙제
-encourage,격려하다
+push,밀다
 invite,초대하다
 special,특별한
 neighbor,이웃
@@ -67,20 +67,20 @@ semester,학기
 temple,절
 change,바꾸다
 November,11월
-describe,묘사하다
+find,찾다
 cook,요리사
 agree,동의하다
 bitter,쓴
 explain,설명하다
 niece,조카(여)
 hallway,복도
-invent,발명하다
+take,가져가다
 taekwondo,태권도
 important,중요한
-imagine,상상하다
+buy,사다
 protect,보호하다
 jealous,질투하는
-count,세다
+want,원하다
 baking,빵 굽기
 table tennis,탁구
 salty,짠

@@ -3,7 +3,7 @@ fishing,낚시
 farm,농장
 bee,벌
 basketball,농구
-hope,바라다
+lead,이끌다
 actor,배우(남)
 salty,짠
 firefighter,소방관
@@ -29,7 +29,7 @@ soldier,군인
 December,12월
 surprised,놀란
 taxi,택시
-compare,비교하다
+sell,팔다
 forest,숲
 factory,공장
 collecting,수집하기
@@ -40,17 +40,17 @@ subject,과목
 curious,궁금한
 decide,결정하다
 different,다른
-weigh,무게를 재다
+love,사랑하다
 baseball,야구
 begin,시작하다
 auditorium,강당
-trust,믿다
+fill,채우다
 farmer,농부
 trail,오솔길
-encourage,격려하다
+push,밀다
 exit,나가다
 cliff,절벽
-create,만들다
+give,주다
 actress,배우(여)
 museum,박물관
 judge,판사
@@ -66,14 +66,14 @@ waterfall,폭포
 city hall,시청
 surfing,서핑
 enter,들어가다
-discover,발견하다
+make,만들다
 start,시작하다
 earthquake,지진
 bicycle,자전거
 wonderful,멋진
 partner,짝
 vet,수의사
-dream,꿈꾸다
+greet,인사하다
 hallway,복도
 hiking,등산
 cafeteria,급식실
@@ -87,4 +87,4 @@ change,바꾸다
 boxing,권투
 science,과학
 difficult,어려운
-complain,불평하다
+pick,고르다/따다

@@ -5,21 +5,21 @@ March,3월
 factory,공장
 bakery,빵집
 ingredient,재료
-participate,참가하다
+tie,묶다
 auditorium,강당
 build,짓다
-solve,풀다
+use,사용하다
 astronaut,우주비행사
 theater,극장
 volleyball,배구
 relieved,안도하는
 magician,마술사
 recipe,조리법
-imagine,상상하다
+buy,사다
 actress,배우(여)
 invite,초대하다
 promise,약속하다
-hope,바라다
+lead,이끌다
 ant,개미
 subject,과목
 test,시험
@@ -32,13 +32,13 @@ exit,나가다
 minus,빼기
 bake,굽다
 boil,끓이다
-arrange,배열하다
+hold,잡다
 mix,섞다
 painting,그림 그리기
 lawyer,변호사
 flavor,맛
-weigh,무게를 재다
-trust,믿다
+love,사랑하다
+fill,채우다
 nervous,긴장한
 visit,방문하다
 scientist,과학자
@@ -59,18 +59,18 @@ earthquake,지진
 baker,제빵사
 jealous,질투하는
 curious,궁금한
-admire,감탄하다
+cut,자르다
 uniform,교복
-guess,추측하다
+need,필요하다
 famous,유명한
 October,10월
 cheap,싼
 pond,연못
 cooking,요리하기
-dream,꿈꾸다
+greet,인사하다
 baseball,야구
 embarrassed,당황한
-respect,존중하다
+fix,고치다
 July,7월
 harbor,항구
 bridge,다리(건축물)
@@ -79,11 +79,11 @@ farm,농장
 tunnel,터널
 class,수업
 useful,유용한
-compare,비교하다
+sell,팔다
 lend,빌려주다
 homework,숙제
 museum,박물관
-attend,참석하다
+pour,붓다
 volcano,화산
 ambulance,구급차
 excited,신난
@@ -101,7 +101,7 @@ police officer,경찰관
 lake,호수
 minute,분
 agree,동의하다
-doubt,의심하다
+hide,숨다
 rocket,로켓
 grandparent,조부모
 different,다른
@@ -122,14 +122,14 @@ June,6월
 music,음악
 soccer,축구
 forget,잊다
-wish,소망하다
+meet,만나다
 planet,행성
 coast,해안
 popular,인기있는
 designer,디자이너
-suggest,제안하다
+wear,입다
 expensive,비싼
-create,만들다
+give,주다
 station,역
 cousin,사촌
 windy,바람부는
@@ -140,7 +140,7 @@ tennis,테니스
 change,바꾸다
 cool,시원한
 path,길
-count,세다
+want,원하다
 circle,원
 finish,끝내다
 city hall,시청
@@ -156,7 +156,7 @@ proud,자랑스러운
 disappointed,실망한
 boat,보트
 remember,기억하다
-discover,발견하다
+make,만들다
 May,5월
 skiing,스키타기
 jungle,정글
@@ -173,7 +173,7 @@ trail,오솔길
 badminton,배드민턴
 gardening,정원 가꾸기
 leave,떠나다
-discuss,의논하다
+lose,잃다
 begin,시작하다
 continue,계속하다
 April,4월
@@ -181,7 +181,7 @@ gymnastics,체조
 schedule,시간표
 bitter,쓴
 boxing,권투
-apologize,사과하다
+pull,당기다
 uncomfortable,불편한
 number,숫자
 humid,습한
@@ -202,7 +202,7 @@ choose,고르다
 rude,무례한
 February,2월
 baking,빵 굽기
-organize,정리하다
+touch,만지다
 soldier,군인
 collecting,수집하기
 triangle,삼각형
@@ -210,7 +210,7 @@ square,정사각형
 worried,걱정하는
 confused,혼란스러운
 principal,교장선생님
-describe,묘사하다
+find,찾다
 fire truck,소방차
 temple,절
 submarine,잠수함
@@ -221,15 +221,15 @@ guard,경비원
 fry,튀기다
 salty,짠
 dancing,춤추기
-invent,발명하다
-warn,경고하다
+take,가져가다
+carry,나르다
 useless,쓸모없는
 sour,신
 airplane,비행기
 collect,모으다
 librarian,사서
 desert,사막
-wonder,궁금해하다
+follow,따라가다
 safe,안전한
 camping,캠핑
 warm,따뜻한
@@ -243,14 +243,14 @@ singing,노래하기
 practice,연습하다
 disagree,반대하다
 noisy,시끄러운
-complain,불평하다
+pick,고르다/따다
 train,기차
 basketball,농구
 English,영어
-measure,측정하다
+like,좋아하다
 diamond,다이아몬드 모양
 comfortable,편안한
-encourage,격려하다
+push,밀다
 taekwondo,태권도
 bee,벌
 lonely,외로운
@@ -270,7 +270,7 @@ neighbor,이웃
 journalist,기자
 vet,수의사
 foggy,안개낀
-plan,계획하다
+share,나누다
 tower,탑
 classmate,반친구
 dentist,치과의사

@@ -1,5 +1,5 @@
-apologize,사과하다
-admire,감탄하다
+pull,당기다
+cut,자르다
 o'clock,정각
 pilot,조종사
 hour,시간
@@ -22,20 +22,20 @@ soldier,군인
 nurse,간호사
 guard,경비원
 earthquake,지진
-warn,경고하다
+carry,나르다
 rainy,비오는
 start,시작하다
-hope,바라다
+lead,이끌다
 agree,동의하다
 leave,떠나다
 fire truck,소방차
 proud,자랑스러운
-create,만들다
+give,주다
 September,9월
 snowy,눈오는
 tennis,테니스
 humid,습한
-dream,꿈꾸다
+greet,인사하다
 shy,수줍은
 volleyball,배구
 athlete,운동선수
@@ -55,18 +55,18 @@ salty,짠
 bee,벌
 swimming,수영
 niece,조카(여)
-count,세다
+want,원하다
 continue,계속하다
-arrange,배열하다
+hold,잡다
 photographer,사진작가
 triangle,삼각형
-wonder,궁금해하다
+follow,따라가다
 cave,동굴
 post office,우체국
 difficult,어려운
 doctor,의사
 seed,씨앗
-imagine,상상하다
+buy,사다
 prepare,준비하다
 special,특별한
 decide,결정하다
@@ -102,7 +102,7 @@ bookstore,서점
 protect,보호하다
 sweet,달콤한
 bakery,빵집
-discover,발견하다
+make,만들다
 city hall,시청
 second,초
 explain,설명하다
@@ -113,9 +113,9 @@ bake,굽다
 disappointed,실망한
 subway,지하철
 grow,자라다
-doubt,의심하다
+hide,숨다
 sour,신
-suggest,제안하다
+wear,입다
 jogging,조깅
 math,수학
 judge,판사
@@ -124,7 +124,7 @@ station,역
 wonderful,멋진
 cliff,절벽
 lawyer,변호사
-respect,존중하다
+fix,고치다
 island,섬
 square,정사각형
 dangerous,위험한

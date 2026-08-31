@@ -3,12 +3,12 @@ gymnastics,체조
 diamond,다이아몬드 모양
 forest,숲
 remember,기억하다
-count,세다
+want,원하다
 begin,시작하다
 invite,초대하다
 schedule,시간표
 hiking,등산
-solve,풀다
+use,사용하다
 auditorium,강당
 brave,용감한
 important,중요한
@@ -23,19 +23,19 @@ rainy,비오는
 promise,약속하다
 September,9월
 writer,작가
-respect,존중하다
+fix,고치다
 baker,제빵사
 badminton,배드민턴
 continue,계속하다
 boat,보트
 safe,안전한
-organize,정리하다
+touch,만지다
 spicy,매운
 forget,잊다
 pilot,조종사
 lawyer,변호사
 hallway,복도
-imagine,상상하다
+buy,사다
 airplane,비행기
 July,7월
 motorcycle,오토바이
@@ -60,7 +60,7 @@ honest,정직한
 confused,혼란스러운
 bus,버스
 engineer,기술자
-weigh,무게를 재다
+love,사랑하다
 judge,판사
 station,역
 holiday,휴일
@@ -73,7 +73,7 @@ taekwondo,태권도
 root,뿌리
 actress,배우(여)
 collect,모으다
-guess,추측하다
+need,필요하다
 class,수업
 uncomfortable,불편한
 bored,지루한

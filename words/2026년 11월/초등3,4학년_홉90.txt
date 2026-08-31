@@ -13,7 +13,7 @@ station,역
 difficult,어려운
 skiing,스키타기
 gymnastics,체조
-trust,믿다
+fill,채우다
 coast,해안
 uniform,교복
 collect,모으다
@@ -30,13 +30,13 @@ soccer,축구
 wonderful,멋진
 English,영어
 museum,박물관
-attend,참석하다
+pour,붓다
 writer,작가
 test,시험
 boil,끓이다
-wish,소망하다
+meet,만나다
 October,10월
-invent,발명하다
+take,가져가다
 post office,우체국
 worried,걱정하는
 art,미술
@@ -53,17 +53,17 @@ January,1월
 cook,요리사
 careful,조심스러운
 choose,고르다
-compare,비교하다
+sell,팔다
 island,섬
 pond,연못
 collecting,수집하기
-hope,바라다
+lead,이끌다
 curious,궁금한
 pilot,조종사
-solve,풀다
+use,사용하다
 theater,극장
 taekwondo,태권도
-measure,측정하다
+like,좋아하다
 cooking,요리하기
 nurse,간호사
 agree,동의하다

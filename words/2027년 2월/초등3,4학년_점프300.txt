@@ -1,8 +1,8 @@
-invent,발명하다
+take,가져가다
 confused,혼란스러운
 build,짓다
 hallway,복도
-measure,측정하다
+like,좋아하다
 forest,숲
 explain,설명하다
 ship,배
@@ -14,7 +14,7 @@ niece,조카(여)
 leaf,잎
 minute,분
 boxing,권투
-discuss,의논하다
+lose,잃다
 humid,습한
 warm,따뜻한
 wonderful,멋진
@@ -34,22 +34,22 @@ driver,운전사
 theater,극장
 train,기차
 science,과학
-attend,참석하다
+pour,붓다
 truck,트럭
 bridge,다리(건축물)
 planet,행성
-create,만들다
+give,주다
 subject,과목
 popular,인기있는
 trail,오솔길
 disagree,반대하다
 o'clock,정각
 circle,원
-wish,소망하다
+meet,만나다
 excited,신난
 dentist,치과의사
 bicycle,자전거
-hope,바라다
+lead,이끌다
 bored,지루한
 mix,섞다
 gardening,정원 가꾸기
@@ -57,14 +57,14 @@ start,시작하다
 locker,사물함
 butterfly,나비
 station,역
-complain,불평하다
+pick,고르다/따다
 auditorium,강당
 expensive,비싼
 careful,조심스러운
 bookstore,서점
 rude,무례한
-guess,추측하다
-organize,정리하다
+need,필요하다
+touch,만지다
 farm,농장
 submarine,잠수함
 curious,궁금한
@@ -72,7 +72,7 @@ April,4월
 cool,시원한
 hockey,하키
 subway,지하철
-respect,존중하다
+fix,고치다
 collecting,수집하기
 test,시험
 frozen,냉동된
@@ -96,7 +96,7 @@ swimming,수영
 return,돌아오다/반납하다
 arrive,도착하다
 useful,유용한
-discover,발견하다
+make,만들다
 ingredient,재료
 golf,골프
 gym,체육관
@@ -114,7 +114,7 @@ surfing,서핑
 uncomfortable,불편한
 visit,방문하다
 math,수학
-admire,감탄하다
+cut,자르다
 cliff,절벽
 careless,부주의한
 lonely,외로운
@@ -133,14 +133,14 @@ magician,마술사
 sunny,화창한
 tunnel,터널
 rectangle,직사각형
-weigh,무게를 재다
+love,사랑하다
 music,음악
 agree,동의하다
 polite,예의바른
 ant,개미
 principal,교장선생님
 taekwondo,태권도
-participate,참가하다
+tie,묶다
 November,11월
 soccer,축구
 English,영어
@@ -148,7 +148,7 @@ different,다른
 special,특별한
 quiet,조용한
 flavor,맛
-plan,계획하다
+share,나누다
 actress,배우(여)
 athlete,운동선수
 dancer,무용수
@@ -164,12 +164,12 @@ meadow,초원
 embarrassed,당황한
 baking,빵 굽기
 grandparent,조부모
-imagine,상상하다
+buy,사다
 root,뿌리
 promise,약속하다
 skiing,스키타기
 airplane,비행기
-describe,묘사하다
+find,찾다
 lend,빌려주다
 farmer,농부
 safe,안전한
@@ -183,17 +183,17 @@ foggy,안개낀
 March,3월
 writer,작가
 tennis,테니스
-suggest,제안하다
+wear,입다
 island,섬
 badminton,배드민턴
-dream,꿈꾸다
+greet,인사하다
 pond,연못
 cycling,자전거타기
 August,8월
 grow,자라다
 firefighter,소방관
 hiking,등산
-compare,비교하다
+sell,팔다
 stranger,낯선 사람
 cousin,사촌
 airport,공항
@@ -219,7 +219,7 @@ toy store,장난감 가게
 rainy,비오는
 branch,나뭇가지
 judge,판사
-trust,믿다
+fill,채우다
 basketball,농구
 recipe,조리법
 homework,숙제
@@ -227,7 +227,7 @@ partner,짝
 shy,수줍은
 singer,가수
 equal,같은
-doubt,의심하다
+hide,숨다
 nurse,간호사
 insect,곤충
 art,미술
@@ -235,7 +235,7 @@ designer,디자이너
 singing,노래하기
 May,5월
 triangle,삼각형
-warn,경고하다
+carry,나르다
 comfortable,편안한
 relieved,안도하는
 painter,화가
@@ -253,7 +253,7 @@ change,바꾸다
 cook,요리사
 finish,끝내다
 sweet,달콤한
-wonder,궁금해하다
+follow,따라가다
 salty,짠
 fry,튀기다
 rocket,로켓
@@ -268,8 +268,8 @@ camping,캠핑
 cafeteria,급식실
 guard,경비원
 protect,보호하다
-arrange,배열하다
-encourage,격려하다
+hold,잡다
+push,밀다
 baseball,야구
 bank,은행
 leave,떠나다
@@ -278,20 +278,20 @@ librarian,사서
 fishing,낚시
 post office,우체국
 painting,그림 그리기
-count,세다
+want,원하다
 desert,사막
 bee,벌
 schedule,시간표
 journalist,기자
 tower,탑
 boat,보트
-solve,풀다
+use,사용하다
 difficult,어려운
 repair,고치다
 actor,배우(남)
 earthquake,지진
 cloudy,흐린
-apologize,사과하다
+pull,당기다
 collect,모으다
 coast,해안
 snowy,눈오는
