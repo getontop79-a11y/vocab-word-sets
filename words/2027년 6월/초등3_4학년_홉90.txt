@@ -1,0 +1,90 @@
+earthquake,지진
+pond,연못
+Korean,국어
+discover,발견하다
+trust,믿다
+skiing,스키타기
+ship,배
+organize,정리하다
+spicy,매운
+choose,고르다
+second,초
+toy store,장난감 가게
+October,10월
+subject,과목
+May,5월
+waterfall,폭포
+taxi,택시
+post office,우체국
+participate,참가하다
+humid,습한
+invent,발명하다
+forget,잊다
+weigh,무게를 재다
+bicycle,자전거
+brave,용감한
+prepare,준비하다
+train,기차
+complain,불평하다
+locker,사물함
+salty,짠
+cafeteria,급식실
+diamond,다이아몬드 모양
+repair,고치다
+seed,씨앗
+path,길
+guard,경비원
+tower,탑
+worried,걱정하는
+factory,공장
+butterfly,나비
+excited,신난
+recipe,조리법
+basketball,농구
+lake,호수
+scientist,과학자
+bakery,빵집
+bank,은행
+agree,동의하다
+bridge,다리(건축물)
+apologize,사과하다
+embarrassed,당황한
+sunny,화창한
+baking,빵 굽기
+curious,궁금한
+planet,행성
+freezing,꽁꽁 언
+nephew,조카(남)
+compare,비교하다
+gardening,정원 가꾸기
+judge,판사
+collect,모으다
+taekwondo,태권도
+mix,섞다
+January,1월
+July,7월
+designer,디자이너
+soldier,군인
+triangle,삼각형
+difficult,어려운
+neighbor,이웃
+homework,숙제
+rectangle,직사각형
+desert,사막
+important,중요한
+math,수학
+December,12월
+table tennis,탁구
+harbor,항구
+useless,쓸모없는
+dangerous,위험한
+hope,바라다
+music,음악
+English,영어
+safe,안전한
+librarian,사서
+subway,지하철
+proud,자랑스러운
+bake,굽다
+trail,오솔길
+bitter,쓴

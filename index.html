@@ -45,6 +45,11 @@
     margin-bottom: 24px;
   }
   .guide b { color: var(--text-primary); }
+  h2 {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 28px 0 10px;
+  }
   .list {
     display: flex;
     flex-direction: column;
@@ -98,6 +103,54 @@
     border-radius: 20px;
     margin-left: 6px;
   }
+  details.month {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  details.month + details.month { margin-top: 10px; }
+  details.month summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  details.month summary::-webkit-details-marker { display: none; }
+  details.month summary::after {
+    content: "▾";
+    color: var(--text-secondary);
+    transition: transform 0.15s;
+    margin-left: 8px;
+  }
+  details.month[open] summary::after { transform: rotate(180deg); }
+  details.month .month-body {
+    padding: 0 14px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .tier-card {
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .tier-card .name { font-weight: 700; font-size: 14px; }
+  .tier-card .meta { color: var(--text-secondary); font-size: 11px; margin-top: 2px; }
+  .month-loading, .month-error {
+    color: var(--text-secondary);
+    font-size: 13px;
+    padding: 4px 4px 12px;
+  }
 </style>
 </head>
 <body>
@@ -108,9 +161,16 @@
     <div class="guide">
       <b>사용 방법</b><br>
       1. 아래에서 원하는 자료를 눌러 다운로드하세요<br>
-      2. <b>모두의 보카</b> 앱을 열고 "지정 단어" → 오른쪽 위 아이콘(가져오기) → "파일에서 불러오기"를 눌러 방금 받은 파일을 선택하세요
+      2. <b>모두의 보카</b> 앱을 열고 "지정 단어" → 오른쪽 위 아이콘(가져오기) → "파일에서 불러오기"를 눌러 방금 받은 파일을 선택하세요<br>
+      3. 링크를 직접 붙여넣고 싶다면 파일 카드를 눌러 열리는 페이지의 주소를 복사해서 앱의 "링크로 가져오기"에 붙여넣어도 돼요
     </div>
 
+    <h2>🗓️ 월별 보카챌린지 세트</h2>
+    <div id="months" class="list">
+      <div class="empty">불러오는 중...</div>
+    </div>
+
+    <h2>📌 고정 자료</h2>
     <div id="list" class="list">
       <div class="empty">불러오는 중...</div>
     </div>
@@ -126,14 +186,106 @@
       return (bytes / 1024).toFixed(1) + " KB";
     }
 
-    async function load() {
+    async function fetchDir(path) {
+      const res = await fetch(
+        `https://api.github.com/repos/${OWNER}/${REPO}/contents/${encodeURIComponent(path).replace(/%2F/g, "/")}`
+      );
+      if (!res.ok) throw new Error("목록을 불러오지 못했어요");
+      return res.json();
+    }
+
+    // 파일 이름 앞부분(예: "초등저학년_홉90.txt")에서 학년대/코스를 보기 좋게 뽑아낸다.
+    function describeTierFile(name) {
+      const withoutExt = name.replace(/\.(txt|csv)$/i, "");
+      const parts = withoutExt.split("_");
+      const tierPart = parts.pop() || "";
+      const band = parts.join("_");
+      const tierMatch = tierPart.match(/^(홉|스텝|점프)(\d+)?$/);
+      if (!tierMatch) return { title: withoutExt, meta: "" };
+      const tierNames = { 홉: "홉 코스", 스텝: "스텝 코스", 점프: "점프 코스" };
+      const count = tierMatch[2] ? `${tierMatch[2]}개` : "";
+      return { title: `${band} · ${tierNames[tierMatch[1]]}`, meta: count };
+    }
+
+    async function loadMonths() {
+      const monthsEl = document.getElementById("months");
+      try {
+        const entries = await fetchDir(PATH);
+        const dirs = (Array.isArray(entries) ? entries : [])
+          .filter((f) => f.type === "dir")
+          // "2026년 9월" 형태를 연/월 숫자로 뽑아 시간순 정렬
+          .map((f) => {
+            const m = f.name.match(/(\d+)년\s*(\d+)월/);
+            const order = m ? parseInt(m[1]) * 100 + parseInt(m[2]) : 0;
+            return { ...f, order };
+          })
+          .sort((a, b) => a.order - b.order);
+
+        if (dirs.length === 0) {
+          monthsEl.innerHTML = '<div class="empty">아직 월별 세트가 없어요</div>';
+          return;
+        }
+
+        monthsEl.innerHTML = dirs
+          .map(
+            (d, i) => `
+            <details class="month" data-path="${PATH}/${d.name}" ${i === 0 ? "open" : ""}>
+              <summary>${d.name}${i === 0 ? '<span class="chip">이번 달</span>' : ""}</summary>
+              <div class="month-body"><div class="month-loading">눌러서 펼치면 목록을 불러와요...</div></div>
+            </details>
+          `
+          )
+          .join("");
+
+        document.querySelectorAll("details.month").forEach((el) => {
+          el.addEventListener(
+            "toggle",
+            async function handler() {
+              if (!el.open) return;
+              el.removeEventListener("toggle", handler);
+              const body = el.querySelector(".month-body");
+              try {
+                const files = await fetchDir(el.dataset.path);
+                const validFiles = (Array.isArray(files) ? files : [])
+                  .filter((f) => f.type === "file" && /\.(txt|csv)$/i.test(f.name))
+                  .sort((a, b) => a.name.localeCompare(b.name));
+                if (validFiles.length === 0) {
+                  body.innerHTML = '<div class="month-error">이 달에는 아직 자료가 없어요</div>';
+                  return;
+                }
+                body.innerHTML = validFiles
+                  .map((f) => {
+                    const d = describeTierFile(f.name);
+                    return `
+                      <div class="tier-card">
+                        <div>
+                          <div class="name">${d.title}</div>
+                          <div class="meta">${d.meta}${d.meta ? " · " : ""}${formatSize(f.size)}</div>
+                        </div>
+                        <a class="btn" href="${f.download_url}" download>다운로드</a>
+                      </div>
+                    `;
+                  })
+                  .join("");
+              } catch (e) {
+                body.innerHTML = '<div class="month-error">목록을 불러오지 못했어요. 잠시 후 다시 시도해주세요.</div>';
+              }
+            }
+          );
+        });
+
+        // 처음부터 열려 있는 카드(이번 달)는 즉시 한 번 펼쳐서 로드
+        const first = document.querySelector("details.month[open]");
+        if (first) first.dispatchEvent(new Event("toggle"));
+      } catch (e) {
+        monthsEl.innerHTML = '<div class="error">목록을 불러오지 못했어요. 잠시 후 다시 시도해주세요.</div>';
+      }
+    }
+
+    async function loadFixed() {
       const listEl = document.getElementById("list");
       try {
-        const res = await fetch(
-          `https://api.github.com/repos/${OWNER}/${REPO}/contents/${PATH}`
-        );
-        if (!res.ok) throw new Error("목록을 불러오지 못했어요");
-        const files = await res.json();
+        const files = await fetchDir(PATH);
         const validFiles = (Array.isArray(files) ? files : [])
           .filter((f) => f.type === "file" && /\.(txt|csv)$/i.test(f.name))
           .sort((a, b) => b.name.localeCompare(a.name));
@@ -161,7 +313,8 @@
       }
     }
 
-    load();
+    loadMonths();
+    loadFixed();
   </script>
 </body>
 </html>
