@@ -207,6 +207,47 @@
       return { title: `${band} · ${tierNames[tierMatch[1]]}`, meta: count };
     }
 
+    async function loadTierFiles(dirPath, bodyEl) {
+      try {
+        const files = await fetchDir(dirPath);
+        const validFiles = (Array.isArray(files) ? files : [])
+          .filter((f) => f.type === "file" && /\.(txt|csv)$/i.test(f.name))
+          .sort((a, b) => a.name.localeCompare(b.name));
+        if (validFiles.length === 0) {
+          bodyEl.innerHTML = '<div class="month-error">이 달에는 아직 자료가 없어요</div>';
+          return;
+        }
+        bodyEl.innerHTML = validFiles
+          .map((f) => {
+            const d = describeTierFile(f.name);
+            return `
+              <div class="tier-card">
+                <div>
+                  <div class="name">${d.title}</div>
+                  <div class="meta">${d.meta}${d.meta ? " · " : ""}${formatSize(f.size)}</div>
+                </div>
+                <a class="btn" href="${f.download_url}" download>다운로드</a>
+              </div>
+            `;
+          })
+          .join("");
+      } catch (e) {
+        bodyEl.innerHTML = '<div class="month-error">목록을 불러오지 못했어요. 잠시 후 다시 시도해주세요.</div>';
+      }
+    }
+
+    // 지금이 실제로 몇 년 몇 월인지에 따라 "이번 달" 폴더를 찾는다(목록의
+    // 첫 번째가 아니라) — 시간이 지나도 페이지가 알아서 그 달 것만 보여주게.
+    function pickCurrentMonth(dirs) {
+      const now = new Date();
+      const nowOrder = now.getFullYear() * 100 + (now.getMonth() + 1);
+      const exact = dirs.find((d) => d.order === nowOrder);
+      if (exact) return exact;
+      const past = dirs.filter((d) => d.order <= nowOrder).sort((a, b) => b.order - a.order);
+      if (past.length > 0) return past[0];
+      return dirs.slice().sort((a, b) => a.order - b.order)[0] || null;
+    }
+
     async function loadMonths() {
       const monthsEl = document.getElementById("months");
       try {
@@ -226,57 +267,58 @@
           return;
         }
 
-        monthsEl.innerHTML = dirs
-          .map(
-            (d, i) => `
-            <details class="month" data-path="${PATH}/${d.name}" ${i === 0 ? "open" : ""}>
-              <summary>${d.name}${i === 0 ? '<span class="chip">이번 달</span>' : ""}</summary>
-              <div class="month-body"><div class="month-loading">눌러서 펼치면 목록을 불러와요...</div></div>
-            </details>
-          `
-          )
-          .join("");
+        const current = pickCurrentMonth(dirs);
+        const rest = dirs.filter((d) => d !== current);
 
-        document.querySelectorAll("details.month").forEach((el) => {
-          el.addEventListener(
+        monthsEl.innerHTML = `
+          <details class="month" data-path="${PATH}/${current.name}" open>
+            <summary>${current.name}<span class="chip">이번 달</span></summary>
+            <div class="month-body"><div class="month-loading">불러오는 중...</div></div>
+          </details>
+          ${
+            rest.length > 0
+              ? `<details class="month" id="otherMonths">
+                  <summary>다른 달 자료 보기</summary>
+                  <div class="month-body" id="otherMonthsBody"></div>
+                </details>`
+              : ""
+          }
+        `;
+
+        const currentEl = monthsEl.querySelector("details.month");
+        loadTierFiles(currentEl.dataset.path, currentEl.querySelector(".month-body"));
+
+        const otherEl = document.getElementById("otherMonths");
+        if (otherEl) {
+          otherEl.addEventListener(
             "toggle",
-            async function handler() {
-              if (!el.open) return;
-              el.removeEventListener("toggle", handler);
-              const body = el.querySelector(".month-body");
-              try {
-                const files = await fetchDir(el.dataset.path);
-                const validFiles = (Array.isArray(files) ? files : [])
-                  .filter((f) => f.type === "file" && /\.(txt|csv)$/i.test(f.name))
-                  .sort((a, b) => a.name.localeCompare(b.name));
-                if (validFiles.length === 0) {
-                  body.innerHTML = '<div class="month-error">이 달에는 아직 자료가 없어요</div>';
-                  return;
-                }
-                body.innerHTML = validFiles
-                  .map((f) => {
-                    const d = describeTierFile(f.name);
-                    return `
-                      <div class="tier-card">
-                        <div>
-                          <div class="name">${d.title}</div>
-                          <div class="meta">${d.meta}${d.meta ? " · " : ""}${formatSize(f.size)}</div>
-                        </div>
-                        <a class="btn" href="${f.download_url}" download>다운로드</a>
-                      </div>
-                    `;
-                  })
-                  .join("");
-              } catch (e) {
-                body.innerHTML = '<div class="month-error">목록을 불러오지 못했어요. 잠시 후 다시 시도해주세요.</div>';
-              }
+            function handler() {
+              if (!otherEl.open) return;
+              otherEl.removeEventListener("toggle", handler);
+              const body = document.getElementById("otherMonthsBody");
+              body.innerHTML = rest
+                .map(
+                  (d) => `
+                  <details class="month" data-path="${PATH}/${d.name}">
+                    <summary>${d.name}</summary>
+                    <div class="month-body"><div class="month-loading">눌러서 펼치면 목록을 불러와요...</div></div>
+                  </details>
+                `
+                )
+                .join("");
+              body.querySelectorAll("details.month").forEach((el) => {
+                el.addEventListener(
+                  "toggle",
+                  function innerHandler() {
+                    if (!el.open) return;
+                    el.removeEventListener("toggle", innerHandler);
+                    loadTierFiles(el.dataset.path, el.querySelector(".month-body"));
+                  }
+                );
+              });
             }
           );
-        });
-
-        // 처음부터 열려 있는 카드(이번 달)는 즉시 한 번 펼쳐서 로드
-        const first = document.querySelector("details.month[open]");
-        if (first) first.dispatchEvent(new Event("toggle"));
+        }
       } catch (e) {
         monthsEl.innerHTML = '<div class="error">목록을 불러오지 못했어요. 잠시 후 다시 시도해주세요.</div>';
       }
